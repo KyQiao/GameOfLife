@@ -4,7 +4,8 @@ if(NOT CMAKE_CXX_FLAGS_RELEASEKE_BUILD_TYPE)
 endif()
 
 file(GLOB SOURCES
-    src/*.cpp
+    src/life.cpp
+    src/python.cpp
     src/*.h
 )
 
