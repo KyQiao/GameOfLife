@@ -4,7 +4,7 @@
 #include <vector>
 #include <random>
 #include <iterator>
-#include <initializer_list>
+#include <algorithm>
 
 class life {
 private:
