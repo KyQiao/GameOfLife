@@ -3,7 +3,7 @@ C++ implementation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conw
 
 
 ## Installation
-require `Cmake`, c++ compiler(e.g. g++, MSVC) and some Python lib(``Opencv-python`,`NumPy`) to output animation.
+require `Cmake`, c++ compiler(e.g. g++, MSVC) and some Python lib(`Opencv-python`,`NumPy`) to output animation.
 
 Examples can be found in "tests" folder.
 
