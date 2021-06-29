@@ -1,7 +1,5 @@
 import life as m
 import time
-# python-opencv is used
-import cv2
 import numpy as np
 
 
@@ -20,18 +18,15 @@ test = m.life(N1, N2, np.random.randint(2, size=N1 * N2))
 frames = 0
 
 ones = np.ones([N1 * N2])
-cv2.namedWindow('image', cv2.WINDOW_NORMAL)
 
 start = time.time()
+interval = 0
 
-while True:
+while interval<30:
     # using 2 process, 1 by default
     test.update(2)
     img = (ones * test.getData()).reshape([N1, N2])
-    cv2.imshow('image', img)
     frames += 1
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-        cv2.destroyAllWindows()
-        break
-end = time.time()
+    end = time.time()
+    interval=end-start
 print("average fps: ", frames / (end - start))
