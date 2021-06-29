@@ -17,3 +17,4 @@ _deps
 tests/__pycache__/test.cpython-37.pyc
 template_example.egg-info/
 life.egg-info/
+.vscode
