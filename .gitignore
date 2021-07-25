@@ -20,4 +20,3 @@ life.egg-info/
 .vscode
 /include
 *.lib
-/tests
